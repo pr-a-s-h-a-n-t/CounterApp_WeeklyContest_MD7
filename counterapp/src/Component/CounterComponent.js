@@ -9,16 +9,14 @@ let  CounterComponent = ( props ) => {
 
     let Increment = () =>  {
 
-        props.onChange(Number(props.count) + 1);
-
-         
+        props.setCount(Number(props.count) + 1);     
     }
 
     let Decrement = () => {
 
         if (props.count > 0) {
-            props.onChange(Number(props.count) - 1);
-            // setCount(count - 1);
+            props.setCount(Number(props.count) - 1);
+            
         }
         else if (props.count === 0) {
             alert("Error!!!");
@@ -28,7 +26,7 @@ let  CounterComponent = ( props ) => {
     }
 
     let setZero = () => {
-        props.onChange(0);
+        props.setCount(0);
     };
 
      

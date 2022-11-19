@@ -13,15 +13,15 @@ function App() {
   } )
 
   
-  function update(newValue) {
-    setCount(newValue);
+  function update( val) {
+    setCount(val);
      
   }
 
   return (
     <div  >
       
-       <CounterComponent count = { count } onChange = { update } />
+       <CounterComponent count = { count } setCount = { update } />
        
     </div>
   );
