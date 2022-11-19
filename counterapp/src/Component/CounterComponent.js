@@ -7,7 +7,7 @@ let  CounterComponent = ( props ) => {
      
      
 
-    let Increment = ( event ) =>  {
+    let Increment = () =>  {
 
         props.onChange(Number(props.count) + 1);
 
